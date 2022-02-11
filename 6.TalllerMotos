@@ -1,0 +1,78 @@
+Proceso TalllerMotos
+	definir Menu,submenu, Moto Como Entero;
+	definir Anotaciones Como Caracter;
+	definir FechaIngreso,FechaSalida,Reparacion,Comentario,nombre Como Caracter;
+	
+	
+	
+	Escribir "Regalame el Id de su motocicleta";
+	leer Moto;
+	Escribir "Regaleme su nombre, Por favor";
+	leer nombre;
+	
+	Escribir "Bienvenido SR(@)", nombre," al Taller de Motos el MAQUINISTA, ELija una Opcion del Menu Porfavor";
+	escribir"1. Registrar Ingreso de La Motocicleta";
+	escribir"2. Registrar Salida de la Motocicleta";
+	escribir"3. Reparaciones";
+	escribir"4. Salir del Sistema";
+	leer Menu;
+	
+	
+	Segun menu Hacer
+		1:
+			escribir"Por favor Digita la Fecha de ingreso De la Motocicleta en formato Dia/Mes/Año";
+			leer FechaIngreso;
+			escribir"El Cliente  ", nombre," Ha ingresado  la motocicleta con id ",moto," con fecha ",FechaIngreso,"al taller el MAQUINISTA";
+			
+			Escribir "Deseas Dejar Algun Comentario";
+			escribir"1. Sí";
+			escribir"2. No";
+			leer submenu;
+			
+			si submenu = 1 Entonces
+				escribir"EScribe el Comentario";
+				leer Comentario;
+				escribir" El Cliente  ", nombre," Ha ingresado  la motocicleta con id ",moto," con fecha ",FechaIngreso," al taller el MAQUINISTA ", " Con el Comentario ",Comentario;
+			SiNo
+				escribir"El Cliente  ", nombre," Ha ingresado  la motocicleta con id ",moto," con fecha ",FechaIngreso,"al taller el MAQUINISTA "," Sin Ningun  Comentario";
+			FinSi
+			
+			
+			
+		2:  escribir"Por favor Digita la Fecha de  Salida De la Motocicleta en formato Dia/Mes/Año";
+			leer FechaIngreso;
+			escribir"El Cliente  ", nombre," Ha Sacado  la motocicleta con id ",moto," con fecha ",FechaIngreso,"al taller el MAQUINISTA";
+			
+			Escribir "Deseas Dejar Algun Comentario";
+			escribir"1. Sí";
+			escribir"2. No";
+			leer submenu;
+			
+			si submenu = 1 Entonces
+				escribir"EScribe el Comentario";
+				leer Comentario;
+				escribir" El Cliente  ", nombre," Ha Sacado  la motocicleta con id ",moto," con fecha ",FechaIngreso,"  del taller el MAQUINISTA ", " Con el Comentario ",Comentario;
+			SiNo
+				escribir"El Cliente  ", nombre," Ha Sacado  la motocicleta con id ",moto," con fecha ",FechaIngreso," del taller el MAQUINISTA "," Sin Ningun  Comentario";
+			FinSi
+			
+		3:
+			escribir" se le hizo algun Arreglo ala moto";
+			escribir"1. Sí";
+			escribir"2. No";
+			leer submenu;
+			si submenu =1 Entonces
+				escribir"Que arreglos sele Hizo a su motocicleta";;
+				leer Anotaciones;
+				escribir"   la motocicleta con id ",moto,"  del taller el MAQUINISTA  se le hizo el siguiente arreglo",Anotaciones;
+			SiNo
+				
+				escribir"   la motocicleta con id ",moto,"  del taller el MAQUINISTA  no  se le hizo ningun arreglo";
+			FinSi
+		
+		4:escribir"Gracias, Que Vuelva Pronto";
+			Esperar Tecla;
+	FinSegun	
+	
+	
+FinProceso

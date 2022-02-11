@@ -1,0 +1,95 @@
+Proceso Peliculas
+	definir Nombre,Pelicula,a,b,c,opcion1,anotacion1 Como Caracter;
+	definir   opcion,Anotacion Como Entero;
+
+	
+	Escribir "  ****VIDEO TIENDA EL PORVENIR ******";
+	Escribir "Regaleme su Nombre Completo";
+	Leer Nombre;
+	
+	a<- " ***Dumbo***";
+	b<-"  ***El Rey***";
+	c<-"  ***Zona 51***";
+	
+	Escribir "MENU PRINCIPAL";
+	Escribir "1 .Peliculas Disponibles y Alquiler  de Peliculas";
+	escribir "2. Anotaciones";
+	Escribir "3. Salir del Sistema ";
+	
+	leer opcion;
+	
+	Segun opcion Hacer
+		1:
+			escribir"listado de peliculas disponibles";
+			escribir "",a;
+			escribir "",b;
+			EScribir "",c;
+			
+			
+			EScribir" Que Pelicula desea Alquilar";
+			Escribir "1. ",a;
+			escribir "2. ",b;
+			Escribir "3. ",c;
+			leer opcion1;
+			Si opcion1 = "1" Entonces
+				escribir" ",nombre,"  USTED ALQUILO LA PELICULA",a;
+		sino
+				si opcion1 = "2" Entonces
+					escribir" ",nombre,"  USTED ALQUILO LA PELICULA",b;
+				sino 
+					escribir" ",nombre,"  USTED ALQUILO LA PELICULA",c;
+				FinSi
+				
+				
+			FinSi
+			
+			
+		2:  escribir" Deseas dejar Alguna Anotación";
+			escribir " Selecciona o Elija";
+			escribir"1. Quiero dejar Anotación";
+			Escribir "2. No quiero dejar Ninguna Anotación";
+			leer Anotacion;
+			
+			si  Anotacion = 1 Entonces
+				escribir" Describa en un breve su Comentario";
+				leer anotacion1;
+			SiNo
+				escribir"No hay ningun Anotacion";
+			FinSi
+			
+			
+		3:escribir"Gracias, Que Vuelva Pronto";
+			Esperar Tecla;
+			
+		
+		
+	
+	FinSegun
+	
+	 
+FinProceso
+//FANNERMONTALVO
+
+	
+	
+	
+	
+	
+	
+
+	
+
+
+	
+	
+	
+
+	
+	
+	
+	
+
+	
+	
+	
+

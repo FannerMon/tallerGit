@@ -1,0 +1,19 @@
+Proceso Datos
+	definir  Nombre, Apellidos Como Caracter;
+	definir Edad Como Entero;
+	
+	Escribir "Digame Su Nombre";
+	leer Nombre;
+	Escribir "Digames sus apellidos";
+	leer Apellidos;
+	Escribir "Digame su edad";
+	Leer Edad;
+	
+	Si Edad >=18 Entonces
+		Escribir "  ",Nombre,"  ",Apellidos," Usted es Mayor de Edad, Por lo Tanto puede Entrar a la Fiesta";
+	SiNo
+		escribir  "  ",Nombre,"  ",Apellidos," Usted es Menor de Edad, Por lo Tanto no  puede Entrar a la Fiesta, Regrese a su casa";
+	FinSi
+	
+FinProceso
+//FANNERMONTALVO

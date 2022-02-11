@@ -1,0 +1,123 @@
+Proceso PastelerosDOnCarlos
+	
+	
+	definir Fecha,NombreCliente,deco1,deco2,deco3, Sabor1,sabor2,sabor3,Torta Como Caracter;
+	definir VentasDiarias Como Entero;
+	Definir Anotaciones Como caracter;
+	definir Menu,submenu,porci1,porci2,porci3 Como Entero;
+	
+	
+	Escribir "Regaleme su nombre, Por favor";
+	leer NombreCliente;
+	
+	Escribir "Bienvenido SR(@)", NombreCliente," a la Pasteleria DON CARLOS, Elija una Opcion del Menu ";
+	Escribir"1. Ingresar tu Pedido";
+	Escribir"2. Tortas Disponible";
+	Escribir"3. Ventas Diarias";
+	Escribir "4. Salir del Sistema";
+	leer Menu;
+	
+	
+	Sabor1<-"Chocolate";
+	sabor2<-"Nucita";
+	sabor3<-"Tres Leches";
+	
+	porci1<-1;
+	porci2<-2;
+	porci3<-3;
+	
+deco1<-" EL hombre Araña";
+deco2<-" Cumpleaños ";
+deco3<- "Matrimonio";
+	
+	
+	
+	
+	Segun Menu Hacer
+		1:
+			Escribir "Señor(@) ",NombreCliente," Ingrese su pedido";
+			Escribir"Que sabor Desea";
+			escribir "1. ",Sabor1;
+			escribir "2. ",sabor2;
+			EScribir "3. ",sabor3;
+			leer submenu;
+			si submenu =1 Entonces
+				escribir"Usted ha Seleccionado el sabor ",Sabor1;
+			SiNo
+				si submenu = 2 Entonces
+					escribir"Usted ha Seleccionado el sabor ",sabor2;
+				SiNo
+					escribir "Usted ha Seleccionado el Sabor ",sabor3;
+				FinSi
+			FinSi
+			
+			Escribir " Cuantas Porciones Desea";
+			escribir porci1," porciones de torta";
+			escribir porci2," porciones de torta";
+			EScribir porci3," porciones de torta";
+			leer submenu;
+			
+			si submenu =1 Entonces
+				escribir "Usted ha Seleccionado  ",porci1," porción de torta";
+			SiNo
+				si submenu = 2 Entonces
+					escribir "Usted ha Seleccionado  ",porci2," porción de torta";
+				SiNo
+					escribir "Usted ha Seleccionado ",porci3," porción de torta";
+				FinSi
+			FinSi
+			
+			Escribir " Que Decoración Deseas";
+			escribir "1. ",deco1;
+			escribir "2. ", deco2;
+			EScribir "3. ", deco3;
+			leer submenu;
+			
+			si submenu =1 Entonces
+				escribir "Usted ha Seleccionado  la Decoración de ",deco1;
+			SiNo
+				si submenu = 2 Entonces
+					escribir "Usted ha Seleccionado  la Decoración de ",deco2;
+				SiNo
+					escribir "Usted ha Seleccionado  la Decoración de ",deco3;
+				FinSi
+			FinSi
+			escribir" Su pedido se ha Resgistrado Satisfactoriamente a nombre de ", NombreCliente;
+			
+		2: escribir"Tortas Disponibles";
+			escribir "1. ",Sabor1;
+			escribir "2. ",sabor2;
+			EScribir "3. ",sabor3;
+			
+		3:
+			
+			escribir"Que dia es Hoy, ingresa la fecha(dia/mes/año)";
+			leer Fecha;
+			Escribir "Cuentas Ventas has realizado Hoy";
+			leer VentasDiarias;
+			
+			escribir"Deseas adicionar algun comentario";
+			escribir "1. Si";
+			escribir "2. No";
+			leer submenu;
+			si submenu = 1 Entonces
+				escribir"Escribe el Comentario";
+				leer Anotaciones;
+				escribir"tu comentario fue ",Anotaciones," del dia",Fecha," con una venta de",VentasDiarias;
+			SiNo
+				escribir "Gracias tu registro de ventas fue de  ", VentasDiarias," a la fecha de ",Fecha;
+				
+			FinSi
+			
+	
+		4:	escribir"Gracias, Que Vuelva Pronto";
+			Esperar Tecla;
+			
+			
+		
+			
+	FinSegun
+	
+	
+FinProceso
+//FANNERMONTALVO

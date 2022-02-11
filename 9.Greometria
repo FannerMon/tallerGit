@@ -1,0 +1,56 @@
+Algoritmo Greometria
+	
+	definir Menu Como Entero;
+	definir Base, Altura,BaseMenor Como Real;
+	definir Unidades,NombreEstu Como Caracter;
+	
+	Escribir "Regaleme su nombre, Por favor";
+	leer NombreEstu;
+	
+	
+	Escribir "Estudiante ", NombreEstu," De cual figura Desea Calcular el Area, Elija una Opcion en el Menu ";
+	Escribir"1. Trapecio ";
+	Escribir"2. Rentangulo ";
+	Escribir"3. Triangulo "; 
+	Escribir "4. Salir";
+	leer Menu;
+	
+	Segun Menu Hacer
+		1:
+			Escribir "Digite el Valor de la Base del Trapecio";
+			leer Base;
+			Escribir " Digite el Valor de la Altura del Trapecio";
+			Leer  Altura;
+			escribir" Digite El Valor de la Base Menor";
+			leer BaseMenor;
+			escribir"Que unidades deseas utilizar(metro,centimetro)";
+			leer Unidades;
+			
+			escribir"El area del Trapecio es  ",[(Base+BaseMenor)*Altura/2]," ", Unidades;
+			
+			
+		2:
+			Escribir "Digite el Valor de la Base del Rectangulo";
+			leer Base;
+			Escribir " Digite el Valor de la Altura del Rectangulo";
+			Leer  Altura;
+			escribir"Que unidades deseas utilizar(metro,centimetro)";
+			leer Unidades;
+			
+			escribir"El área del Rentangulo es ",[(Base*Altura)/2] ," ", Unidades ;
+		3:
+			Escribir "Digite el Valor de la Base del Triangulo";
+			leer Base;
+			Escribir " Digite el Valor de la Altura del Triangulo";
+			Leer  Altura;
+			escribir"Que unidades deseas utilizar(metro,centimetro)";
+			leer Unidades;
+			
+			escribir"El área del Triangulo es ",(Base*Altura)," ", Unidades ;
+		
+			4:escribir"Gracias, Que Vuelva Pronto";
+				Esperar Tecla;
+	FinSegun
+	
+FinAlgoritmo
+//FANNERMONTALVO

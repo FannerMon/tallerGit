@@ -1,0 +1,13 @@
+Proceso PersonaMayor
+	definir Persona Como entero;
+	escribir "Digame su Edad";
+	leer Persona;
+	Si Persona >= 18 Entonces
+		Escribir "Usted es Mayor de Edad";
+		
+	SiNo
+		Escribir "usted es Menor de Edad";
+	FinSi
+	
+FinProceso
+//FANNERMONTALVO

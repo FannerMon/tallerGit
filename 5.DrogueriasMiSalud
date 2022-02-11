@@ -1,0 +1,87 @@
+Proceso DrogueriasMiSalud
+	//Esta drogueria presta los servicios en suba, 
+	//los servicios disponibles es registrar los prodcutso que comprar los clientes
+	
+	definir Menu,submenu como entero;
+	Definir nombreCliente,Produc1, Produc2,Produc3,NombreProducto,Comentarios Como Caracter;
+	Definir   Valorpro1, Valorpro2, Valorpro3 Como  real;
+	Definir Anotaciones Como Logico;
+	
+	
+	
+	Escribir "Regaleme su nombre, Por favor";
+	leer nombreCliente;
+	
+	Escribir "Bienvenido SR(@)", nombreCliente," a la Drogueria Mi Salud, ELija una Opcion del Menu Porfavor";
+	escribir"1. Comprar un Producto";
+	escribir"2. Consultar Precio del Producto";
+	escribir"3. Devoluciones de Productos";
+	escribir"4. Salir del Sistema";
+	leer Menu;
+	
+	Produc1<-" Aspirina  ";
+	Produc2<-" Vitamina C ";
+	Produc3<-"Dolex Forte ";
+	
+	Valorpro1<-3600;
+	Valorpro2<-5700;
+	Valorpro3<-4500;	
+	
+	
+	Segun Menu Hacer
+		1:
+			Escribir"Qué Deseas Comprar";
+			Escribir "1. ",Produc1;
+			escribir "2. ",Produc2;
+			Escribir "3. ",Produc3;
+			leer submenu;
+			Si submenu = 1 Entonces
+				escribir "SR(@)", nombreCliente," has Comprado  el ",Produc1,"Por un Valor de $",Valorpro1;
+			sino
+				si submenu = 2 Entonces
+					escribir "SR(@)", nombreCliente," has Comprado  el ",Produc2,"Por un Valor de $",Valorpro2;
+				sino 
+					escribir "SR(@)", nombreCliente," has Comprado  el ",Produc3,"Por un Valor de $",Valorpro3;
+				FinSi
+				
+				finsi
+			
+			
+			2:
+				escribir"Los productos Registrados en la base de datos  son";
+				Escribir "1. ",Produc1;
+				escribir "2. ",Produc2;
+				Escribir "3. ",Produc3;
+				escribir" De cual deseas saber el Precio ";
+				leer submenu;
+				si submenu = 1 Entonces
+					escribir"EL valor del Producto Seleccionado es $",Valorpro1;
+				SiNo
+					si submenu = 2 Entonces
+						escribir"EL valor del Producto Seleccionado es $",Valorpro2;
+					SiNo
+						escribir"EL valor del Producto Seleccionado es$",Valorpro3;
+					FinSi
+					
+				FinSi
+				
+			
+		3: escribir"Que Producto deseas Devolver";
+			Escribir "1. ",Produc1;
+			escribir "2. ",Produc2;
+			Escribir "3. ",Produc3;
+			leer submenu;
+			Escribir "por favor diga las razones por la cual lo devuelve";
+			leer Comentarios;
+			escribir"el SR(@)", nombreCliente," Devuelve el siguiente producto sus  razones ",Comentarios;
+			escribir"Gracias Por compra , que tenga un Exelente dia";
+		
+			
+			
+			4:escribir"Gracias, Que Vuelva Pronto";
+				Esperar Tecla;
+	FinSegun
+	
+	
+FinProceso
+//FANNERMONTALVO

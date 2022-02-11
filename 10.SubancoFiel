@@ -1,0 +1,53 @@
+Proceso SubancoFiel
+	
+	definir NombreCliente Como Caracter;
+	definir Menu Como Entero;
+	definir Ingreso,Retiro, SaldoInicial Como Real;
+	
+	escribir "Ingrese el Nombre del Titular de la Cuenta";
+	leer NombreCliente;
+	
+	
+	Escribir "Bienvenido SR(@)", NombreCliente,"  a su Banco Amigo Fiel, Siendo Usted el titular de la Cuenta, Usted cuenta con los Siguientes Beneficios";
+	escribir"Seleccione que operacion desea Realizar?";
+	escribir"1. Retiros";
+	Escribir "2. Consultas";
+	Escribir "3. Ingresos";
+	leer Menu;
+	
+	SaldoInicial<- 15000000;
+	
+	Segun Menu Hacer
+		
+		1:escribir"Cuanto desea Retirar";
+			leer Retiro;
+			
+			si (retiro>SaldoInicial) Entonces
+				escribir"Saldo Insuficiente, su Retiro es Mayor que su saldo,Cuanto desea retirar, Intenta Nuevamente";
+				leer retiro;
+				escribir" Su Retiro fue Exitoso,su saldo es de $  ",SaldoInicial-retiro;
+			sino 
+				escribir" Su Retiro fue Exitoso,su saldo es de $  ",SaldoInicial-retiro;
+			FinSi
+			
+		2:escribir"SR(@) ", NombreCliente, " Su Saldo Actual es de ", SaldoInicial;
+			
+		3:
+			escribir "Cuanto desea Consignar";
+			leer Ingreso;
+			
+			si (Ingreso<0) Entonces
+				escribir"El valor a Consignar es Negativo,por favor Cuanto deseas Consignar";
+				leer Ingreso;
+				escribir"Su Consignación fue Exitosa, Su nuevo saldo es $  ",SaldoInicial+Ingreso;
+			sino
+				escribir"Su Consignación fue Exitosa, Su nuevo saldo es $  ",SaldoInicial+Ingreso;
+			FinSi
+			
+		4:escribir"Gracias, Que Vuelva Pronto";
+			Esperar Tecla;
+			
+	FinSegun
+	
+FinProceso
+//FANNERMONTALVO

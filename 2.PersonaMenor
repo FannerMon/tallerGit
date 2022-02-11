@@ -1,0 +1,13 @@
+Proceso PersonaMenor
+	//definimos las variable y el tipo
+	definir Persona Como Entero;
+	Escribir "digame su Edad";
+	leer Persona;
+	Si Persona < 18 Entonces
+		Escribir "Usted es un niño";
+	SiNo
+		escribir "es puede entrar ";
+	FinSi
+	
+FinProceso
+//FANNERMONTALVO
