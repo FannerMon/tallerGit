@@ -1,0 +1,11 @@
+Algoritmo MisDatos
+	// Se define las variables y sus respectivos Tipos....
+	Definir  Nombre, Apellidos Como Caracter;
+	Definir Estatura Como Real;
+	Definir Edad Como Entero; ;
+	// se  captura la información que trae la variable
+	Leer Nombre;
+	Leer Apellidos;
+	Leer Edad;
+	Leer  Estatura;
+FinAlgoritmo

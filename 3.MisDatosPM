@@ -1,0 +1,25 @@
+Proceso MisDatos
+	// Se define las variables y sus respectivos Tipos...
+	Definir  Nombre, NombreP, NombreM, Apellidos,ApellidosP, ApellidosM Como Caracter;
+	
+	//se Piden los datos que nesecitas.
+	Escribir "tu Nombre es";	
+	// se  captura la información que trae la variable
+	Leer Nombre;
+	Escribir "Tus apellidos Son";
+	leer Apellidos;
+	Escribir " El Nombre de Tu papa Es";
+	leer NombreP;
+	Escribir "Los apellidos de tu padre son";
+	leer ApellidosP;
+	escribir "el nombre de tu Mama es";
+	leer NombreM;
+	Escribir "los apellidos de tu Madre son";
+	leer ApellidosM;
+	
+	
+	Escribir "Yo ",  Nombre, " "  ,Apellidos, " Soy Hijo de  ",NombreM,"  ", ApellidosM," y ",NombreP,"  ",ApellidosP; 
+	
+	
+	
+FinProceso

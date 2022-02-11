@@ -1,0 +1,15 @@
+Proceso Capital
+	// Se define las variables y sus respectivos Tipos...
+	Definir  CiudadCapital, Pais Como Caracter;
+	
+	//se Piden los datos que nesecitas.
+	Escribir " Mensioname el Nombre de una Ciudad Capital";	
+	// se  captura la información que trae la variable
+	Leer CiudadCapital;
+	Escribir "En que Pais se encuentra";
+	leer pais;
+
+	Escribir "La Ciudad ",  CiudadCapital, " Es la Capital del Pais ", pais ;
+	
+	
+FinProceso
