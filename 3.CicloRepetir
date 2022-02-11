@@ -1,0 +1,92 @@
+Proceso CicloRepetir
+	//se definen las variables a utilizar en este caso contador de tipo entero
+	Definir i,j,a,b Como Entero;
+	//se inicia i en 1
+	i <- 1;
+	//se inicia b en 2
+	b<-2;
+	//inciamos el ciclo repetir 
+	Repetir
+		//se inicia j en 0
+		j<-0;
+		// si i es menor que la posicion 12, entra al si y ejecutamos 
+		Si (i<12) Entonces
+			Repetir
+				//j toma el valor de la posicion de el +1
+				j<-j+1;
+				// se pregunta si j es menor que la mitad de la posicion  menos pa posicion i +1 O
+				//se pregunta si j es mayor que la mitad de la posicion mas posicion i+1
+				Si (j<=(20/2)-i+1) O(j>=(20/2)+i+1) Entonces
+					//si se cumple el condicional nos mutresa los espacios
+					Escribir sin saltar ' ';
+				FinSi
+				// se pregunta si j es mayor que la motad de la posicion menos la posicion i +1 y
+				//se pregunta  si j es menor que la mitad de la posicion mas la posicion i +1
+				// si el condicional se cumple no debe imprimir un *
+				Si (j>(20/2)-i+1) Y(j<(20/2)+i+1) Entonces
+					//si se cumple el condicional nos muestra *
+					Escribir Sin Saltar '*';
+					
+				FinSi
+				
+				//se pregunta que si j toma el valor de 21
+				Si j=21 Entonces
+					//si j toma el valor de 21 en posicion nos muestra espacio
+					Escribir " ";		
+					
+				FinSi
+				// se repirte hasta que j tome el valor de 21 para terminar de impirmir el arbolito con * y espacios
+			Hasta Que j=21
+			
+		FinSi
+		// se realiza lo mismo esta vez es para crear la parte de abajo ubucar las posiciones
+		Si (i=12) Entonces
+			a <-2;
+			Repetir
+				j<-j+1;
+				Si (j<=(20/2)-a+1) O(j>=(20/2)+a+1) Entonces
+					Escribir sin saltar ' ';
+				FinSi
+				Si (j>(20/2)-a+1) Y(j<(20/2)+a+1) Entonces
+					Escribir Sin Saltar '*';
+					
+				FinSi
+				
+				
+				Si j=21 Entonces
+					Escribir " ";		
+					
+				FinSi
+				
+				
+				
+			Hasta Que j=21
+		FinSi	
+		// se realiza el procedimiento para crear la parte final del arbol, la base
+		Si (i>12) Entonces
+			Repetir
+				j<-j+1;
+				Si (j<=(20/2)-b+1) O(j>=(20/2)+b+1) Entonces
+					Escribir sin saltar ' ';
+				FinSi
+				Si (j>(20/2)-b+1) Y(j<(20/2)+b+1) Entonces
+					Escribir Sin Saltar '*';
+					
+				FinSi
+				
+				
+				Si j=21 Entonces
+					Escribir " ";		
+					
+				FinSi
+				
+			Hasta Que j=21
+			b<-b+1;
+		FinSi	
+		
+		i<-i+1;
+	Hasta Que i=16;
+	
+FinProceso
+
+//FANNERMONTALVO

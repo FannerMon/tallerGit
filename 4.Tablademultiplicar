@@ -1,0 +1,11 @@
+Proceso Tablademultiplicar
+	definir A,contar,k Como Entero;
+	escribir"Digite un numero, Por favor solo Numeros Enteros";
+	leer A;
+	Para contar<-1 Hasta 10 Con Paso 1 Hacer
+		k<- contar*A;
+		Escribir "",A," x ",contar," = ",k;
+	FinPara
+	
+FinProceso
+//FANNERMONTALVO

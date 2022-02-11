@@ -1,0 +1,40 @@
+Proceso MenuEje
+	
+	definir nombreusuario,saludar Como Caracter;
+	definir menu Como Entero;
+	escribir"**** MENÚ DE PERSONAS";
+	
+	
+	Repetir
+		escribir"Ingresa tu Nombre Completo";
+		leer nombreusuario;
+		
+		Borrar Pantalla;
+		Escribir "MENU DE USUARIO ";
+		Escribir "Seleccione lo que Desea Hacer";
+		
+		escribir "1. CAPTURA DE NOMBRE ";
+		escribir "2. SALUDAR PERSONA";
+		escribir "3. SALIR DEL SISTEMAS";
+		escribir"SELECCIONES UNA OPCIÓN EN EL MENÚ";
+		leer menu;
+	
+		Segun menu Hacer
+			1:
+				Escribir "Vamos a Capturara tu Nombre";
+				escribir"Tu nombre se a Capturado y correponde a  ", nombreusuario;
+				
+			2: escribir "Queremos saludarte";
+				Escribir"Hola SR(@) ",nombreusuario," Es un gusto Tenerte por aqui, Exitos y que tenga buen Dia";
+				
+			
+			3:	escribir"Gracias, Que Vuelva Pronto";
+				Esperar Tecla;
+			
+		FinSegun
+			
+	Hasta Que menu = 3;	
+	
+	
+FinProceso
+//FANNERMONTALVO

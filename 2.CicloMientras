@@ -1,0 +1,34 @@
+Proceso CicloM
+	//Definimos los contadores
+	Definir Contadori,Contadorj Como Entero;
+	//inicializamos el contador en 1
+	Contadori<-1;
+	
+	// Mientras que el contador sea menor que las filas hacer
+	Mientras (Contadori<=10) Hacer
+		//el contador j se inicaliza en 1 para que valla guardadno la posicion de los *
+		Contadorj<-1;
+		Mientras Contadorj<=10 Hacer
+			
+			//si la posicion j es mayor que 10 menos la posicion contador i
+			Si Contadorj>(10-Contadori) Entonces
+				//muestra  los asterios en la posicion 
+				Escribir Sin Saltar '*';
+			SiNo
+				//muestra los espacion en la posicion
+				Escribir Sin Saltar ' ';
+			FinSi
+			// si contadorj es igual al entero 10, mutesra espacios 
+			Si Contadorj=10 Entonces
+				Escribir '';
+			FinSi
+			//al Contadorj se le incrementa la posicion de el +1
+			Contadorj<-Contadorj+1;
+		FinMientras
+		//al Contadori se le incremneta la posicion de el +1
+	Contadori<-Contadori+1;
+	FinMientras
+	
+FinProceso
+//FANNERMONTALVO
+
