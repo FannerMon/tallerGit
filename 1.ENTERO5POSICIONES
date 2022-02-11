@@ -1,0 +1,16 @@
+Proceso Entero
+	
+	definir X,Z, vector Como Entero;
+ 
+	Dimension vector[5];
+	
+	para x <- 0 hasta 4 Con Paso 1 Hacer
+		escribir "Digite Numero (", x+1, ")";
+		leer vector[x];
+	FinPara
+	
+	para Z <- 0 hasta 4  con paso 1 Hacer
+		escribir"Indice de Cada Posición  con su valor";
+		escribir"Num[",Z+1,"]"," = ",vector[Z];
+	FinPara
+FinProceso

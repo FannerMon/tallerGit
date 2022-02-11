@@ -1,0 +1,26 @@
+Proceso Primos
+	//se definene las variables de tipo entero
+	Definir A,B  Como Entero;
+	//contador como logico que arroja verdadero o flaso
+	Definir Contador Como Logico;
+	
+	//enviamos un mensaje, mostrando los numero primos en ese rango
+	Escribir  "*****+Numeros Primos entre el Numero 1 y el Numero 1000 son******+";
+	//se le asigna a A un rango de 2 a 1000  con paso uno para que verifique  posición por posición
+	Para A<-2 Hasta 1000 Con Paso 1 Hacer
+		Contador <- Verdadero;
+		Para B<-2 Hasta A-1 Con Paso 1 Hacer
+			//se compara si el residuo es cero, a contadro le asigna falso.
+			Si (A MOD B)=0 Entonces
+				Contador <- Falso;
+			FinSi
+		FinPara
+		Si (Contador = Verdadero) Entonces
+			Escribir Sin Saltar A,"-";
+		FinSi
+	FinPara
+	Escribir "  ";
+	
+FinProceso
+
+

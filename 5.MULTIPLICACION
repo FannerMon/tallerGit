@@ -1,0 +1,47 @@
+Proceso Punto5_T4
+	
+	//inicializamos las variables
+	//se le da dimeison a los arreglos 
+	Definir Tabla,inicial1, inicial2, simbolo Como Caracter;
+	Definir producto,i,j Como Entero;
+	Dimension Tabla[10,10]; Dimension producto[10,10];
+	
+	//validamos que recorra la posicion 0 hasta la 9
+	Para i<-0 Hasta 9 Con Paso 1 Hacer
+		Si i=0 Entonces
+			Escribir Sin Saltar '       ',i,'  |';
+			
+		SiNo
+			Escribir Sin Saltar '    ',i,'  |';
+		FinSi
+		
+	FinPara
+	Escribir '';
+
+
+	Para i<-0 Hasta 9 Con Paso 1 Hacer
+		Escribir Sin Saltar ' ',i," | ";
+		Para j<-0 Hasta 9 Con Paso 1 Hacer
+			
+			inicial2<-ConvertirATexto(j+1);
+			inicial1<-ConvertirATexto(i+1);
+			simbolo <- Concatenar(inicial2," X ");
+			Tabla[i,j]<- Concatenar(simbolo,inicial1);
+			producto[i,j]<-((i+1)*(j+1));
+			Si i=9 Entonces
+				Escribir Sin Saltar Tabla[i,j],'  ';
+			SiNo
+				Escribir Sin Saltar Tabla[i,j],'   ';
+			FinSi
+			
+		FinPara
+		Escribir '';
+	FinPara
+	
+	Escribir 'Escriba la fila de la cual quiere ver el resultado: ';
+	Leer i;
+	Escribir 'Escriba la columna de la cual quiere ver el resultado: ';
+	Leer j;
+	Escribir "Resultado(",i,',',j,') es: ',producto[i,j];
+	
+FinProceso

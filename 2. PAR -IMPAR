@@ -1,0 +1,49 @@
+
+
+
+Proceso imparesPares
+	Definir Datos,A,B,C Numeropar, Numeroimpar Como Entero;
+	
+	Dimension Datos[20],Numeropar[20],Numeroimpar[20];
+	//se inicializan las bariables en cero
+	A<-0;
+	B<-0;
+	C<-0;
+	
+	
+	Repetir
+		Datos[i] <- Aleatorio(1,100);
+		i<-i+1;
+	Hasta Que i=20;
+	
+	
+	Para i<-0 Hasta 19 Con Paso 1 Hacer
+		Si (arreglo[i] MOD 2)=0 Entonces
+			par[j]<-arreglo[i];
+			j<-j+1;
+	
+		SiNo
+			impar[k]<-arreglo[i];
+			k<-k+1;
+		FinSi
+	FinPara
+	
+	i<-0;
+	Escribir Sin Saltar "Números pares: ";
+	Mientras i<j Hacer
+		Escribir Sin Saltar par[i],", ";
+		i<-i+1;
+	FinMientras
+	
+	Escribir "";
+	i<-0;
+	Escribir Sin Saltar "Números impares: ";
+	Mientras i<k Hacer
+		Escribir Sin Saltar impar[i],", ";
+		i<-i+1;
+	FinMientras
+	Escribir "";
+FinProceso
+
+
+

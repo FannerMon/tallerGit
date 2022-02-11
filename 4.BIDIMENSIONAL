@@ -1,0 +1,28 @@
+Proceso BIDIMENSIONAL
+	Definir MatrizBidimensional Como Caracter;
+	Definir A,B Como Entero;
+	
+	Dimension MatrizBidimensional[4,5];
+	
+	MatrizBidimensional[0,0]<-'01';MatrizBidimensional[0,1]<-'02';MatrizBidimensional[0,2]<-'03';MatrizBidimensional[0,3]<-'04';MatrizBidimensional[0,4]<-'05';
+	MatrizBidimensional[1,0]<-'06';MatrizBidimensional[1,1]<-'07';MatrizBidimensional[1,2]<-'08';MatrizBidimensional[1,3]<-'09';MatrizBidimensional[1,4]<-'10';
+	MatrizBidimensional[2,0]<-'11';MatrizBidimensional[2,1]<-'12';MatrizBidimensional[2,2]<-'13';MatrizBidimensional[2,3]<-'14';MatrizBidimensional[2,4]<-'15';
+	MatrizBidimensional[3,0]<-'16';MatrizBidimensional[3,1]<-'17';MatrizBidimensional[3,2]<-'18';MatrizBidimensional[3,3]<-'19';MatrizBidimensional[3,4]<-'20';
+	
+	
+	Para A<-0 Hasta 3 Con Paso 1 Hacer
+		Si A=1 O A=3 Entonces
+			Para B<-4 Hasta 0 Con Paso -1 Hacer
+				Escribir Sin Saltar MatrizBidimensional[A,B], "  ";
+			FinPara
+		SiNo
+			Para B<-0 Hasta 4 Con Paso 1 Hacer
+				Escribir Sin Saltar MatrizBidimensional[A,B], " ";
+			FinPara
+		FinSi
+		Escribir '';
+	FinPara
+FinProceso
+
+
+
